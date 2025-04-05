@@ -1,0 +1,167 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Bucket List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #0077cc;
+      --background: #f5f7fa;
+      --foreground: #ffffff;
+      --text-color: #333;
+      --accent-color: #00bcd4;
+      --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background);
+      color: var(--text-color);
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background: var(--foreground);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 4px solid var(--accent-color);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    p.intro {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    li {
+      background: var(--background);
+      padding: 18px 20px;
+      margin-bottom: 15px;
+      border-left: 5px solid var(--accent-color);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateX(5px);
+      background: #e0f7fa;
+    }
+
+    .icon {
+      margin-right: 15px;
+      font-size: 1.3rem;
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="https://via.placeholder.com/120" alt="My Photo">
+      <h1>My Advanced Bucket List</h1>
+      <p class="intro">Driven by dreams and passion, here's my ever-growing list of personal and professional goals.</p>
+    </header>
+
+    <section>
+      <h2> Travel Goals</h2>
+      <ul>
+        <li><i class="fas fa-plane-departure icon"></i>Explore Japan during Sakura season</li>
+        <li><i class="fas fa-snowflake icon"></i>See the Northern Lights in Norway</li>
+        <li><i class="fas fa-train icon"></i>Travel across Europe on the Eurail</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2> Skill Goals</h2>
+      <ul>
+        <li><i class="fas fa-laptop-code icon"></i>Build and deploy a full-stack app</li>
+        <li><i class="fas fa-music icon"></i>Learn to play the electric guitar</li>
+        <li><i class="fas fa-language icon"></i>Become fluent in Spanish and French</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Life Goals</h2>
+      <ul>
+        <li><i class="fas fa-book icon"></i>Publish a novel or technical book</li>
+        <li><i class="fas fa-briefcase icon"></i>Start my own tech company</li>
+        <li><i class="fas fa-running icon"></i>Complete an Ironman triathlon</li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
